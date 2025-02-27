@@ -21,6 +21,7 @@ h1 {
     text-align: center;
 }
 
+/* Hero Section */
 #hero, footer {
     color: #267fde;
     border: 2px solid #267fde;
@@ -34,11 +35,13 @@ h1 {
     width:500px;
 }
 
+/* Bio Section */
 #bio {
     text-align: left;
     font-size: 20pt;
 }
 
+/* Hobbies */
 #hobbies {
     font-size: 20pt;
 }
@@ -49,4 +52,19 @@ h1 {
 
 #hobbies ul li:nth-child(3){
     color: seagreen;
+}
+
+/* Gallery */
+
+#gallery {
+    border: 2px solid #267fde;
+    text-align: center;
+}
+
+#gallery img {
+    max-width:100%;
+}
+
+#gallery figure {
+    text-align: left;
 }
