@@ -59,6 +59,7 @@ h1 {
 #gallery {
     border: 2px solid #267fde;
     text-align: center;
+    margin-bottom:2rem;
 }
 
 #gallery img {
@@ -68,3 +69,36 @@ h1 {
 #gallery figure {
     text-align: left;
 }
+
+/* Literature */
+
+#lit {
+    border: 2px solid #267fde;
+    margin-bottom:2rem;
+    text-align: center;
+}
+
+#lit div {
+    padding:2rem;
+    max-width:40rem;
+    margin:0 auto;
+}
+
+#lit div p {
+    padding: 0.3rem 0;
+    clear:both;
+}
+
+#lit div p:first-child:first-letter {
+    color: red;
+    float: left;
+    background-color: silver;
+    font-size:3em;
+    padding:0.25em;
+    margin-right:0.25em;
+    line-height:.65;
+    border:4px outset #267fde;
+    font-family: "Rationale";
+    text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+}   
+
