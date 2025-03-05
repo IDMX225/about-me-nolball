@@ -8,11 +8,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family:"Rationale";
     text-align: center;
-}
-
-h1 {
     font-size: 40pt;
 }
+
 
 h2 {
     margin: 0.1em;
@@ -115,6 +113,7 @@ header {
     text-shadow: 2px 2px 3px rgba(0,0,0,.5);
 }   
 
+/* tablet size */
 @media screen and (min-width: 60em) {
     figure {
         display: grid;
@@ -127,5 +126,10 @@ header {
         align-items: center;
         font-size: 2rem;
         margin: 1rem;
+    }
+
+    #lit div {
+        max-width: 100%;
+        columns: 20rem;
     }
 }
