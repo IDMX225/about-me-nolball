@@ -135,7 +135,7 @@ header {
 
     #lit div {
         max-width: 100%;
-        columns: 20rem;
+        columns: 40rem;
     }
 }
 
@@ -144,7 +144,7 @@ header {
 @media screen and (min-width: 100em) {
     #gallery {
         display: grid;
-        grid-template-columns: repeat( 3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     hr {
