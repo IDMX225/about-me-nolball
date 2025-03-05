@@ -22,6 +22,7 @@ header {
 
 
 /* Hero Section */
+
 #hero, footer {
     color: #65c9ff;
     border: 2px solid #267fde;
@@ -36,6 +37,7 @@ header {
 }
 
 /* Bio Section */
+
 #bio {
     text-align: center;
     font-size: 20pt;
@@ -67,11 +69,9 @@ header {
 
 #gallery {
     border: 2px solid #267fde;
-    text-align: center;
-    margin-bottom: 2rem;
 }
 
-#gallery img {
+#gallery img  {
     max-width: 100%;
 }
 
@@ -83,7 +83,7 @@ header {
 
 #lit {
     border: 2px solid #267fde;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -114,10 +114,11 @@ header {
 }   
 
 /* tablet size */
+
 @media screen and (min-width: 60em) {
     figure {
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 2fr 1fr;
     }
     
     figcaption {
@@ -125,11 +126,36 @@ header {
         justify-content: center;
         align-items: center;
         font-size: 2rem;
-        margin: 1rem;
+        margin-left: 1rem;
+    }
+
+    figure img {
+        width: 100%;
     }
 
     #lit div {
         max-width: 100%;
         columns: 20rem;
+    }
+}
+
+/* large screen size */
+
+@media screen and (min-width: 100em) {
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr);
+    }
+
+    hr {
+        display: none;
+    }
+
+    #gallery h2 {
+        grid-column: 1 / -1;
+    }
+
+    figure {
+        display: block;
     }
 }
