@@ -69,6 +69,7 @@ header {
 
 #gallery {
     border: 2px solid #267fde;
+    margin-bottom: 0.5rem;
 }
 
 #gallery img  {
@@ -113,6 +114,22 @@ header {
     text-shadow: 2px 2px 3px rgba(0,0,0,.5);
 }   
 
+/*Video*/
+
+#video {
+    text-align: center;
+}
+
+iframe {
+    width: 100%;  /* Makes the video take up 100% of the width of its container */
+    height: auto; /* Adjusts the height automatically to maintain aspect ratio */
+    max-width: 560px; /* Optional: sets a max width for larger screens to avoid it becoming too large */
+  }
+
+  #video figcaption {
+    margin-bottom: 1rem;
+  }
+
 /* tablet size */
 
 @media screen and (min-width: 60em) {
@@ -137,6 +154,7 @@ header {
         max-width: 100%;
         columns: 40rem;
     }
+
 }
 
 /* large screen size */
