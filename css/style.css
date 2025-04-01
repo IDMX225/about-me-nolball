@@ -130,6 +130,12 @@ iframe {
     margin-bottom: 1rem;
   }
 
+/* Contact Form */
+
+#formElements {
+    display: grid;
+    
+}
 /* tablet size */
 
 @media screen and (min-width: 60em) {

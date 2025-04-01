@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
@@ -10,8 +11,10 @@
     <link href="css/style.css" rel="stylesheet">
 
 </head>
+
 <body>
     <header>
+
         <img src="img/logo-96X96.svg" alt="Blue origami logo">
         <h1>Web Dev I - Online!</h1>
 
@@ -19,18 +22,23 @@
 
     <main>
         <section id="hero">
+
             <img src="img/avataaars.png" alt="Avatar picture of me">
         
     
             <div>
+
                 <p>Nolan Duarte</p>
                 <p>Basking Ridge, NJ</p>
+
             </div>
+
         </section>
     
         <section id="bio">
 
             <h2>Biography:</h2>
+
             <div>
                 <p>I am...</p>
                 <p>A student at Raritan Valley Community College</p>
@@ -46,10 +54,13 @@
 
                 <p><a href="https://soundcloud.com/nolan-duarte-308758344?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">My SoundCloud</a></p>
                 <p><a href="https://rooms.xyz/kingartyj">My Rooms</a></p>
+
             </div>
+
         </section>
 
         <section id="hobbies">
+
             <h2>Hobbies:</h2>
 
             <ul>
@@ -60,6 +71,7 @@
                 <li>Working out at the gym</li>
 
                 <p><a href="https://open.spotify.com/user/nolball?si=952ae51d0e964cc2">My Spotify</a></p>
+
         </section>
 
         <section id="gallery">
@@ -69,35 +81,41 @@
             <hr>
 
             <figure>
+
                 <img src="img/short-name-640w copy.jpg" alt="My Michael Jackson shirt">
                 <figcaption>One of my favorite shirts that i own</figcaption>
+
             </figure>
 
             <hr>
 
             <figure>
+
                 <img src="img/short-name-640w 2 copy.jpg" alt="Lake Champion campsite">
                 <figcaption>Lake Champion-One of my favorite places to come to</figcaption>
+
             </figure>
 
             <hr>
 
             <figure>
+
                 <img src="img/short-name-640w 3 copy.jpg" alt="My Curry 3Z6 shoes">
                 <figcaption>One of my favorite pairs of shoes (The brand is by the NBA player Stephen Curry)</figcaption>
+
             </figure>
 
         </section>
         
         <article id="lit">
+
             <h2>Random Mumbo Jumbo</h2>
 
             <div>
+
                 <p>Lorem ipsum dolor sit amet. Est doloribus voluptas qui dicta laborum 33 animi esse ut provident accusantium cum rerum beatae ex earum voluptas. Qui mollitia soluta qui tempora distinctio qui animi quis. Ea maxime possimus aut deleniti modi qui explicabo itaque ea harum sunt. At dolor cupiditate non odit laborum id suscipit eveniet quo voluptatibus minus qui error nobis in omnis mollitia. In dolores quia ut veritatis doloremque At expedita sint et pariatur praesentium qui incidunt minima est voluptas voluptates aut sapiente dolore.</p>
                 <p>Vel laborum blanditiis sed odit autem id quia saepe quo provident aperiam ut voluptatem cumque. Et dolorum temporibus vel voluptatibus vero sed aliquam facilis eum enim galisum. Et explicabo quia eum inventore deleniti quo distinctio dolorem aut quia molestiae ut itaque consequatur est alias perferendis sit consequuntur vitae. 33 quis fuga aut galisum maiores qui distinctio molestiae sit illo quaerat qui ipsum voluptas sit incidunt eveniet non nesciunt impedit. Vel provident magni et saepe quaerat eum voluptas incidunt qui sapiente labore in voluptas molestiae. Hic possimus aperiam ab ipsum repellat est iste assumenda! Et soluta doloribus ea error quae est assumenda magnam et rerum quia non unde beatae. Ut necessitatibus nobis et totam similique eos architecto fugiat eum unde corrupti est magni voluptatem qui voluptas facere. Sit dolor quasi eum voluptatem delectus ut delectus ipsam aut laboriosam autem aut modi similique et ratione omnis ut eius tenetur.</p>
                 <p>Qui dolor optio At quidem nemo qui quis sint sit architecto odit est inventore suscipit eos dolorum amet eum blanditiis voluptatum. Ex numquam reiciendis ex dolorem dolore et dolor commodi. Et inventore officia vel rerum unde non reiciendis earum id facere saepe et quia dolor sed totam officia in assumenda quia. Aut quia explicabo ut excepturi minus sit voluptates quisquam sit neque eveniet ab veritatis necessitatibus. 33 nobis dignissimos ut amet autem nam explicabo magni aut obcaecati consequuntur ut sequi dolor. </p>
-
-
 
             </div>
 
@@ -109,11 +127,85 @@
             
             <iframe width="560" height="315" src="https://www.youtube.com/embed/fk1uCb92ToI?si=PX6BRIxagxavexG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <figcaption>My favorite photos</figcaption>
+
         </section>
+
+        <section id="contact">
+
+            <h2>Contact Us:</h2>
+
+            <form id="contactForm" name="contactForm" method="post" data-netlify="true">
+
+                <fieldset>
+
+                    <legend>Contact Form</legend>
+
+                    <div id="formElements">
+
+                        <!--Name-->
+                        <label for="name">Name (required)</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <!--Email-->
+                        <label for="email">Email (required)</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <!--Phone-->
+                        <label for="phone">Phone (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <!--Phone Type-->
+                        <label for="phonetype">Phone Type (optional)</label>
+                        <select id="phonetype" name="phonetype">
+
+                            <option value="" selected>Select phone type</option>
+                            <option value="mobile">Mobile</option>
+                            <option value="work">Work</option>
+                            <option value="home">Home</option>
+
+                        </select>
+
+                        <!--Message-->
+                        <label for="message">Message (optional)</label>
+                        <textarea id="message" name="message" rows="8"></textarea>
+
+                        <!-- Reply -->
+                         <fieldset>
+
+                            <legend>Would you like a reply?</legend>
+
+                            <ul>
+
+                                <li>
+                                    <input type="radio" id="message-yes" name="reply" value="Yes, a reply please">
+                                    <label for="message-yes">Yes, a reply would be nice</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" id="message-no" name="reply" value="No reply please" checked>
+                                    <label for="message-no">No thanks</label>
+                                </li>
+
+                            </ul>
+
+                         </fieldset>
+
+                        <!--Submit-->
+                        <button type="submit">Submit</button>
+
+                    </div>
+
+                </fieldset>
+
+            </form>
+
     </main>
 
     <footer>
+
         © 2025 Nolan Duarte 😎
+
     </footer>
+
 </body>
 </html>
