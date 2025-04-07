@@ -65,7 +65,7 @@ main {
 
 .navbar-links a {
     color: whitesmoke;
-    background-attachment: #333;
+    background-color: #333;
     font-size: 1.5rem;
     padding: 1rem 1.25rem;
     letter-spacing: 2px;
@@ -73,6 +73,11 @@ main {
     display: inline-block;
 }
 
+.navbar-links a:hover, .navbar-links a:focus {
+    filter: invert(1);
+    border-radius: 10px;
+    outline: none;
+}
 
 
 /* 
