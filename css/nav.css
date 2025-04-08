@@ -4,10 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 
- get rid of padding & sizing on body so
- header is at top
-*/
+/* get rid of padding & sizing on body so header is at top */
 
 body {
   box-sizing: border-box;
@@ -59,10 +56,7 @@ main {
     padding: 0.5em 0;
 }
 
-/*  
- style all a tags in header 
- and then on hover
-*/
+/* style all a tags in header and then on hover */
 
 .navbar-links a {
     color: whitesmoke;
@@ -82,11 +76,7 @@ main {
 }
 
 
-/* 
-media query for non-mobile nav bar
-min-width set to width of nav elements 
-such that no text wraps 
-*/
+/* media query for non-mobile nav bar min-width set to width of nav elements such that no text wraps */
 
 @media screen and (min-width: 60rem) {
     
