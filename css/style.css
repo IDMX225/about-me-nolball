@@ -224,4 +224,10 @@ legend {
     figure {
         display: block;
     }
+
+    #lit div {
+        max-width: 100%;
+        columns: 40rem;
+    }
+
 }
