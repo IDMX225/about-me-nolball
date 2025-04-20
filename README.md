@@ -11,6 +11,13 @@ Name
  Description
 
  This project will tell viewers something about myself. There are different sections, such as a Bio section, a  Hobbies section, a Literature section, and a Contact section. The coding language that was used is HTML. While creating this project, I learned new tags such as figcaption, figure, section, hr, select, fieldset, legend, form, article, header, and nav. I also used some tags I already knew from my previous knowledge such as p, div, head, and body. I also learned how to add a contact form, a video, and a caption for an image and how to add a navbar, which helps viewers go to different pages.
+
+ New Additions
+
+ Changed logo
+ Updated Bio and Hobbies
+ Added Github Link to Footer
+
  
  Color Scheme
  

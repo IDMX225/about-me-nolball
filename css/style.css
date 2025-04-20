@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 40pt;
 }
 
+h1 {
+    padding: 20px;
+}
+
 
 h2 {
     margin: 0.1em;
@@ -53,6 +57,7 @@ header {
 
 #hobbies {
     font-size: 20pt;
+    text-align: center;
 }
 
 #hobbies ul li:nth-child(2), ul li:nth-child(4) {
@@ -78,6 +83,28 @@ header {
 
 #gallery figure {
     text-align: center;
+}
+
+#gallery figure {
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+#gallery img {
+    width: 100%; /* Ensures the images take the full width of their container */
+    height: auto;
+    display: block; /* Removes bottom space in images */
+    border-radius: 8px;
+}
+
+#gallery figure:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#gallery figure:hover figcaption {
+    color: navy; /* Change to any color of your choice */
 }
 
 /* Literature */
@@ -178,6 +205,13 @@ legend {
     width: 50%;
     justify-self: center;
 }
+
+/* Footer Section */
+
+footer a {
+    color: lightblue;
+}
+
 /* tablet size */
 
 @media screen and (min-width: 60em) {
@@ -204,6 +238,7 @@ legend {
     }
 
 }
+
 
 /* large screen size */
 
