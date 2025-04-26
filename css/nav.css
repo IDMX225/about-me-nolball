@@ -30,6 +30,55 @@ main {
     padding: 1rem;
 }
 
+.navbar-links {
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before, .nav-toggle-label span::after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+    margin-bottom: 0.2em;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+    margin-top: 0.2em;
+}
+
+.nav-toggle:checked ~ nav div {
+    transform: scale(1, 1);
+}
+
 
 /* logo */
 
@@ -38,9 +87,9 @@ main {
     align-items: center;
 }
 
-.logo img {
-    height: 6vw;
-    width: 6vw;
+.logo-img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
 }
 
 .logo h1 {
@@ -88,5 +137,15 @@ main {
     .navbar ul {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo-img {
+        width: 150px; /* Increase size for mobile */
+    }
+
+    .logo-title {
+        font-size: 1.5em; /* Optional: increase title font size too */
     }
 }

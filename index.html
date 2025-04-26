@@ -4,6 +4,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png">
     <title>About Me</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rationale&display=swap" rel="stylesheet">
@@ -17,22 +18,30 @@
     <!-- Header - Navbar, Logo, Links -->
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <img 
-                    src="img/favicon-96x96.png" 
-                    class="logo-img" 
-                    alt="Blue origami logo" 
-                />
-                <h1 class="logo-title">Web Dev I - Online!</h1>
-            </div>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#bio" class="nav-links">Bio</a></li>
-                    <li><a href="#gallery" class="nav-links">Gallery</a></li>
-                    <li><a href="#lit" class="nav-links">Blog</a></li>
-                    <li><a href="#contact" class="nav-links">Contact Me</a></li>
-                </ul>
-            </div>
+            <nav class="navbar-logo">
+                <div class="logo">
+                    <img 
+                        src="img/logo copy.svg" 
+                        class="logo-img" 
+                        alt="Blue origami logo" 
+                    />
+                    <h1 class="logo-title">Web Dev I - Online!</h1>
+                </div>
+            </nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#bio" class="nav-links">Bio</a></li>
+                        <li><a href="#gallery" class="nav-links">Gallery</a></li>
+                        <li><a href="#lit" class="nav-links">Blog</a></li>
+                        <li><a href="#contact" class="nav-links">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
         </nav>
     </header>
 
