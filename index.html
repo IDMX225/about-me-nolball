@@ -12,38 +12,43 @@
     
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/nav.css" rel="stylesheet" />
+    <script src="script/nav.js"></script>
 </head>
 <body>
 
     <!-- Header - Navbar, Logo, Links -->
-    <header>
-        <nav class="navbar">
-            <nav class="navbar-logo">
-                <div class="logo">
-                    <img 
-                        src="img/logo copy.svg" 
-                        class="logo-img" 
-                        alt="Blue origami logo" 
-                    />
-                    <h1 class="logo-title">Web Dev I - Online!</h1>
-                </div>
+    <header class="heading">
+        <div class="header-left">
+            <img src="img/logo copy.svg" alt="Logo of the site" class="logo" />
+            <h1>Web Dev 1 - Online!</h1>
+        </div>
+
+        <div class="header-right">
+            <nav class="nav">
+                <ul class="nav-menu hidden">
+                    <li><a href="#bio" class="nav-links">Bio</a></li>
+                    <li><a href="#hobbies" class="nav-links">Hobbies</a></li>
+                    <li><a href="#gallery" class="nav-links">Gallery</a></li>
+                    <li><a href="#lit" class="nav-links">Blog</a></li>
+                    <li><a href="#video" class="nav-links">Video</a></li>
+                    <li><a href="#contact" class="nav-links">Contact Me</a></li>
+                </ul>
             </nav>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <div class="navbar-links">
-                    <ul>
-                        <li><a href="#bio" class="nav-links">Bio</a></li>
-                        <li><a href="#gallery" class="nav-links">Gallery</a></li>
-                        <li><a href="#lit" class="nav-links">Blog</a></li>
-                        <li><a href="#contact" class="nav-links">Contact Me</a></li>
-                    </ul>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                    <span id="window.onclick" class="line-md--close-to-menu-transition block"></span>
+                    <span id="window.onclick" class="line-md--menu-to-close-alt-transition hidden"></span>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <li><a href="#bio" class="nav-links">Bio</a></li>
+                  <li><a href="#hobbies" class="nav-links">Hobbies</a></li>
+                  <li><a href="#gallery" class="nav-links">Gallery</a></li>
+                  <li><a href="#lit" class="nav-links">Blog</a></li>
+                  <li><a href="#video" class="nav-links">Video</a></li>
+                  <li><a href="#contact" class="nav-links">Contact Me</a></li>
                 </div>
-            </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
-        </nav>
-    </header>
+              </div>
+</header>
 
     <main>
         <!-- Hero Section -->
@@ -73,7 +78,7 @@
                 <p><a href="https://rooms.xyz/kingartyj">My Rooms</a></p>
 
                 <p>Here is a picture of me a few years ago:</p>
-                <img src="img/me copy.jpg" alt="A picture of me"
+                <img src="img/me copy.jpg" alt="A picture of me">
 
             </div>
 
@@ -126,13 +131,27 @@
         <!-- Literature Section -->
         <article id="lit">
 
-            <h2>Random Mumbo Jumbo</h2>
+            <h2>CSS Animation Blog</h2>
 
             <div>
 
-                <p>Lorem ipsum dolor sit amet. Est doloribus voluptas qui dicta laborum 33 animi esse ut provident accusantium cum rerum beatae ex earum voluptas. Qui mollitia soluta qui tempora distinctio qui animi quis. Ea maxime possimus aut deleniti modi qui explicabo itaque ea harum sunt. At dolor cupiditate non odit laborum id suscipit eveniet quo voluptatibus minus qui error nobis in omnis mollitia. In dolores quia ut veritatis doloremque At expedita sint et pariatur praesentium qui incidunt minima est voluptas voluptates aut sapiente dolore.</p>
-                <p>Vel laborum blanditiis sed odit autem id quia saepe quo provident aperiam ut voluptatem cumque. Et dolorum temporibus vel voluptatibus vero sed aliquam facilis eum enim galisum. Et explicabo quia eum inventore deleniti quo distinctio dolorem aut quia molestiae ut itaque consequatur est alias perferendis sit consequuntur vitae. 33 quis fuga aut galisum maiores qui distinctio molestiae sit illo quaerat qui ipsum voluptas sit incidunt eveniet non nesciunt impedit. Vel provident magni et saepe quaerat eum voluptas incidunt qui sapiente labore in voluptas molestiae. Hic possimus aperiam ab ipsum repellat est iste assumenda! Et soluta doloribus ea error quae est assumenda magnam et rerum quia non unde beatae. Ut necessitatibus nobis et totam similique eos architecto fugiat eum unde corrupti est magni voluptatem qui voluptas facere. Sit dolor quasi eum voluptatem delectus ut delectus ipsam aut laboriosam autem aut modi similique et ratione omnis ut eius tenetur.</p>
-                <p>Qui dolor optio At quidem nemo qui quis sint sit architecto odit est inventore suscipit eos dolorum amet eum blanditiis voluptatum. Ex numquam reiciendis ex dolorem dolore et dolor commodi. Et inventore officia vel rerum unde non reiciendis earum id facere saepe et quia dolor sed totam officia in assumenda quia. Aut quia explicabo ut excepturi minus sit voluptates quisquam sit neque eveniet ab veritatis necessitatibus. 33 nobis dignissimos ut amet autem nam explicabo magni aut obcaecati consequuntur ut sequi dolor. </p>
+                <p>The world has changed over the years and there are big differences between the world today and the world from decades past. One example is cars. Back then, nobody had a self-driving car such as Tesla. People would drive the cars themselves, even if they were tired, because it was the only thing they could do on the road since they didn’t want to crash their car. Another instance is digital technology. In the past, for example, computers and phones weren’t as complex as they are now. There weren’t that many websites back then and phones weren’t digital back then, let alone use the Internet or an app such as Calculator or Clock. Artificial intelligence which is such a hot topic today wasn’t even widely available just a few years ago. A lesser known change which has redefined our user web experience is CSS animation. It was introduced in 2009, creating a connection between us, the users, and the website.</p>
+                <p>So, what is CSS animation? CSS animation is a feature, used to display certain effects to a part of a webpage and feedback to an action that the user does on a webpage. One would say that the animation gives life to the webpage. CSS animation is a part of CSS, which is called Cascading Style Sheets, a language used to style coding languages such as HTML. One part of CSS animation works with JavaScript to enhance the user experience with simple animations such as button changing colors when hovered over or a logo that can move. For example, the hover feature allows users to put their cursor over a button, allowing the button to change in animation. This interaction is done, due to the :hover pseudo-class. Another example is a text animation, where the text does an animation when the user visits a website.</p>
+                <p>Another part of CSS animation is SVG animation, which uses the @keyframes property and rule. The @keyframes rule points out the different stages of the animation. With this rule, developers can choose how an element can look and whether it’s at the start, the middle, or the end of the animation. There are other versions of this rule that are used by browsers. Two examples are @-moz-keyframes, which is used by Mozilla Firefox, and @-webkit-keyframes, which is used by Google Chrome. These versions are also used in the code to make sure that the animation works in every browser. It probably is exhausting for the developers because there will be multiple lines of this rule. The @keyframes property is used alongside the animation property. The animation property has sub-properties such as animation-name, which gives us the name of the @keyframes rule in the animation, animation-duration, which tells us how long the animation will last, animation-delay, which tells us how long before the start of the animation, and animation-direction, which tells us whether the animation goes forward or backward.</p>
+                <p>CSS animation can be seen on the web and is used by browsers such as Mozilla Firefox and Google Chrome and search engines such as Google. For example, Google uses CSS animation in their logos when celebrating an event or holiday. Sometimes the logo can also be user-interactive when CSS animation is used. In addition to browsers and search engines, mobile phones such as IOS and Android and applications like iTunes also use CSS animation.</p>
+                <p>CSS animation has enriched and enhanced modern day websites, where users find websites more interesting and engaging, compared to static HTML pages from the past.</p>
+                <p>Here are some examples:</p>
+
+                <p><a href="https://laugh-mind.co.jp/">Laugh Mind Company</a></p>
+                <p><a href="https://www.altitude.so/">Altitude</a></p>
+
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="pyBNzX" data-pen-title="Pure CSS Gradient Background Animation" data-user="P1N2O" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/P1N2O/pen/pyBNzX">
+                    Pure CSS Gradient Background Animation</a> by Manuel Pinto (<a href="https://codepen.io/P1N2O">@P1N2O</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
 
             </div>
 
@@ -151,7 +170,7 @@
         <!-- Contact Section -->
         <section id="contact">
 
-            <h2>Contact Us:</h2>
+            <h2>Contact Me:</h2>
 
             <form id="contactForm" name="contactForm" method="POST" data-netlify="true">
 
@@ -217,6 +236,8 @@
                 </fieldset>
 
             </form>
+
+        </section>
 
     </main>
     

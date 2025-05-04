@@ -2,8 +2,12 @@ body {
     font-family:"Patrick Hand";
     background-color: #de9a26;
     color: #456689;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family:"Rationale";
@@ -13,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     padding: 20px;
+    font-size: 30pt;
 }
 
 
@@ -20,8 +25,16 @@ h2 {
     margin: 0.1em;
 }
 
-header {
-    text-align: center;
+/* make scrolling smooth */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* add some padding back to rest of page */
+
+main {
+    padding: 2.5rem;
 }
 
 
@@ -53,14 +66,12 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#hobbies {
     font-size: 20pt;
     text-align: center;
 }
 
-#hobbies ul li:nth-child(2), ul li:nth-child(4) {
+
+#hobbies ul li:nth-child(2), #hobbies ul li:nth-child(4) {
     color:red;
 }
 
@@ -117,7 +128,7 @@ header {
 
 #lit div {
     padding: 2rem;
-    max-width: 40rem;
+    min-width: 40rem;
     margin: 0 auto;
 }
 
@@ -132,9 +143,9 @@ header {
     color: red;
     float: left;
     background-color: silver;
-    font-size: 3em;
-    padding: 0.25em;
-    margin-right: 0.25em;
+    font-size: 2em;
+    padding: 0.2em;
+    margin-right: 0.2em;
     line-height: .65;
     border: 4px outset #267fde;
     font-family: "Rationale";
@@ -149,8 +160,8 @@ header {
 
 iframe {
     width: 100%;  /* Makes the video take up 100% of the width of its container */
-    height: auto; /* Adjusts the height automatically to maintain aspect ratio */
-    max-width: 560px; /* Optional: sets a max width for larger screens to avoid it becoming too large */
+    height: 20em; /* Adjusts the height automatically to maintain aspect ratio */
+    width: 30em; /* Optional: sets a max width for larger screens to avoid it becoming too large */
   }
 
   #video figcaption {
